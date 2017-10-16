@@ -1,0 +1,16 @@
+vowels = 'e', 'y', 'u', 'i', 'o', 'a'
+def pig_latin(word):
+  i = 0
+  for i in range(len(vowels)):
+    while word[i] not in vowels:
+      i += 1
+      new_word = word[0:] + 'ay'
+    new_word = word[i:] + word[0:i] + 'ay'
+    return new_word
+   
+    
+print(pig_latin('ovo'))
+print(pig_latin('bubble'))
+print(pig_latin('ster'))
+print(pig_latin('hour'))
+print(pig_latin('strong'))
