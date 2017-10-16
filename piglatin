@@ -4,7 +4,6 @@ def pig_latin(word):
   for i in range(len(vowels)):
     while word[i] not in vowels:
       i += 1
-      new_word = word[0:] + 'ay'
     new_word = word[i:] + word[0:i] + 'ay'
     return new_word
    
